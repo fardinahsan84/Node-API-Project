@@ -21,7 +21,9 @@ const SearchBar = () => {
                         <input  
                             type="text"
                             className='form-control'
-                            placeholder='Search image....'
+                            value={filter}
+                            onChange = {searchText.bind(this)}
+                            placeholder = 'Search...'
                         />
                     </div>
                 </div>
@@ -38,7 +40,6 @@ const SearchBar = () => {
                             </div>
                         </div>
                     )
-                
                 })}
             </div>
         </section>
